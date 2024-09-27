@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Grocery Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <div class="text">
+                <h2 style="color: aliceblue;">Featured Products</h2>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/R.4db191629ace12e1ffa4df8fda20efa5?rik=U1cawIUtQrzdDg&riu=http%3a%2f%2fbombisgroup.com%2fwp-content%2fuploads%2f2017%2f02%2fWhite-Rice-HD-Wallpaper-04696-1.jpg&ehk=LrBo7xNN5mQ3X8xXvBW4UNYrxU0w8W962MAFa4VqiRw%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Rice">
+                <h3>Rice</h3>
+                <p>₹46.00 kg</p>
+                <button onclick="addToCart('Rice', 42.00, 'kg')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH2lYpg_q7cdP-lGaXjX3FYuZmDExPHW_A_Q&s" alt="Salt">
+                <h3>Salt</h3>
+                <p>₹20.00 Packet</p>
+                <button onclick="addToCart('Salt', 20.00, 'Packet')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8BeRR27nSYS08mxljyPpFId0_VzgXMsugmSwWn_81QSyijrTkpwT5VtHmTPLLvB3TFYQ&usqp=CAU " alt=" Flour ">
+                <h3>Flour</h3>
+                <p>₹35.00 kg</p>
+                <button onclick="addToCart( 'Flour', 35.00, 'Kg') ">Add to Cart</button>
+            </div>
+            <div class="product ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmIQ8I0FVgjxO5IhNCWIJPsEMltE3GY9vSQQ&s " alt="Sugar ">
+                <h3>Sugar</h3>
+                <p>₹48.00 Kg</p>
+                <button onclick="addToCart( 'Sugar', 48.00 , ' Kg') ">Add to Cart</button>
+            </div>
+            <div class="product ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTj3UwKss27La9N7s9ii_ormgpie4Imxiajw&s " alt="Mustard Oil ">
+                <h3>Mustard Oil</h3>
+                <p>₹165.00 Ltr</p>
+                <button onclick="addToCart( 'Mustard Oil', 165.00, 'Ltr' ) ">Add to Cart</button>
+            </div>
+            <div class="product ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjKFqCfbSQv4gILeVh2O1yGSx80mfWy7xaQ&s " alt="Bread ">
+                <h3>Bread</h3>
+                <p>₹15.00 Packet</p>
+                <button onclick="addToCart( 'Bread', 15.00, 'Packet') ">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <section id="cart ">
+            <h2>Your Cart
+                <span class="count "></span>
+            </h2>
+            <ul id="cart-items "></ul>
+            <p id="total "></p>
+
+            <!-- <button id="checkout-btn " onclick="checkout() ">Checkout</button> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Online Grocery Shop</p>
+    </footer>
+
+    <script src="script.js "></script>
+</body>
+
+</html>
